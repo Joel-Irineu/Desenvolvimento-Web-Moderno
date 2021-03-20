@@ -1,51 +1,132 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>Desafio Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-        /* ... */
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Oswald';
+        }
+        body{
+            background: #D3D3D3;
+        }
+        .cabecalho{
+            background: #333333;
+            height: 90px;
+            justify-content: center;
+            align-items: center;
+            border-bottom: solid 5px #4faddb;
+            padding: 10px;
+        }
+        .cabecalho a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .logo{
+            display: inline;
+            float: left;
+        }
+        .logo img{
+            height: 50px;
+        }
+        .menu{
+            float: left;
+        }
+        .menu ul li{
+            display: inline;
+            padding: 20px;
+        }
+        .menu ul li:hover{
+            background: #4faddb;
+            cursor: pointer;
+        }
+        .menu-toggle{
+            display: none;
+        }
+        .menu ul, .autenticacao{
+            padding: 20px;
+        }
+        .autenticacao{
+            float: right;
+        }
+        .autenticacao a{
+            padding: 20px;
+        }
+        a.botao{
+            border-radius: 30px;
+            padding: 10px 25px;
+            margin-right: 10px;
+        }
+        .destaque{
+            background: #f50a31;
+        }
+
+        @media(max-width: 873px){
+            .autenticacao{
+                display: none;
+            }
+        }
+        @media(max-width: 645px){
+            .menu{
+                display: none;
+            }
+            .menu-toggle{
+                display: block;
+                float: right;
+                padding: 20px;
+                margin-right: 5px;
+                color: #fff;
+                background-color: #555555;
+                border: none;
+            }
+        }
+        @media(max-width: 350px){
+            .logo img {
+                height: 30px;
+                margin: 10px;
+            }
+        }
     </style>
 </head>
-
 <body>
-    <header class="cabecalho">
-        <div class="logo">
-            <a href="#inicio">
-                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" />
-            </a>
-        </div>
-        <button class="menu-toggle">
-            <i class="fa fa-lg fa-bars"></i>
-        </button>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#inicio">Início</a>
-                </li>
-                <li>
-                    <a href="#cursos">Cursos</a>
-                </li>
-                <li>
-                    <a href="#sobre">Sobre</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
-            </ul>
-        </nav>
-        <aside class="autenticacao">
-            <a href="#login">Login</a>
-            <a href="#registar" class="botao destaque">Registrar</a>
-        </aside>
-    </header>
-
-    <script>
-        // ...
-    </script>
+<header class="cabecalho">
+    <div class="logo">
+        <a href="#inicio">
+            <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" />
+        </a>
+    </div>
+    <button class="menu-toggle">
+        <i class="fa fa-lg fa-bars"></i>
+    </button>
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="#inicio">Início</a>
+            </li>
+            <li>
+                <a href="#cursos">Cursos</a>
+            </li>
+            <li>
+                <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+                <a href="#contato">Contato</a>
+            </li>
+        </ul>
+    </nav>
+    <aside class="autenticacao">
+        <a href="#login">Login</a>
+        <a href="#registar" class="botao destaque">Registrar</a>
+    </aside>
+</header>
+<script>
+    document.querySelector()
+</script>
 </body>
-
 </html>

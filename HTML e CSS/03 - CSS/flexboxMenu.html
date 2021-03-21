@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>Desafio Menu</title>
@@ -54,9 +53,22 @@
         /* ==================== */
         /* Solução com Flex Box */
         /* ==================== */
+        .cabecalho{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .menu{
+            flex-grow: 10;
+        }
+        .menu ul{
+            display: flex;
+        }
+        .menu ul li{
+            margin: 0px 10px;
+        }
     </style>
 </head>
-
 <body>
     <header class="cabecalho">
         <div class="logo">
@@ -86,5 +98,4 @@
         </aside>
     </header>
 </body>
-
 </html>

@@ -40,10 +40,17 @@
         }
         .menu ul li{
             display: inline;
+        }
+        .menu ul li a{
             padding: 20px;
         }
-        .menu ul li:hover{
+        .menu ul li .selected{
             background: #4faddb;
+            color: #333;
+        }
+        .menu ul li a:hover{
+            background: #4faddb;
+            color: #333;
             cursor: pointer;
         }
         .menu-toggle{
@@ -126,7 +133,15 @@
     </aside>
 </header>
 <script>
-    document.querySelector()
+    window.onhashchange = function(e){
+        const oldURL = e.oldURL.split('#')[1]
+        const newURL = e.newURL.split('#')[1]
+        console.log(oldURL, newURL)
+        const oldMenu = document.querySelector(`.menu a[href='#${oldURL}'`)
+        const newMenu = document.querySelector(`.menu a[href='#${newURL}'`)
+        oldMenu && oldMenu.classList.remove('selected')
+        newMenu && newMenu.classList.add('selected')
+    }
 </script>
 </body>
 </html>

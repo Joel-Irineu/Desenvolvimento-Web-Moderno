@@ -4,53 +4,44 @@
     <meta charset="UTF-8">
     <title>Desafio Card</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .cards{
-            margin-left: 22px;
-        }
         .curso{
-            width: 260px;
+            /* float: left; */
             display: inline-block;
-            padding: 4px;
-            margin: 0px 15px;
-            font-family: 'Roboto', sans-serif;
-
-            -webkit-box-shadow: 2px 5px 16px 3px #00000066; 
-            box-shadow: 2px 5px 16px 3px #00000066;
-            margin-bottom: 20px;
+            vertical-align: top;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 300px;
+            width: 260px;
+            margin: 5px 20px;
+            padding: 5px;
+            box-shadow: 0px 4px 20px 0px #00000066;
+            -webkit-box-shadow: 0px 4px 20px 0px #00000066; 
         }
-        .curso img{
+        .curso img {
             width: 100%;
+            max-height: 50%;
         }
         .curso-info{
-            height: 150px;
+            padding: 10px;
+            height: 90px;
+            overflow: hidden;
         }
         .curso-info h4{
-            font-size: 25px;
-            font-weight: 500;
-            padding: 10px 0px;
-        }
-        .curso-info p{
-            font-size: large;
+            font-size: 1.4em;
+            font-weight: 100;
+            margin: 0;
         }
         .curso-preco{
-            padding: 0px 10px 10px 0px;
             float: right;
+            padding: 10px;
         }
         .preco-de{
-            font-size: 19px;
-            color: #f00;
-            font-weight: bold;
             text-decoration: line-through;
+            color: #f00;
         }
         .preco-por{
-            font-size: 30px;
-            color: #028002;
+            color: #0f0;
             font-weight: bold;
+            font-size: 1.4em;
         }
     </style>
 </head>
@@ -66,7 +57,7 @@
             <img src="http://files.cod3r.com.br/curso-web/curso1.jpg" />
             <div class="curso-info">
                 <h4>Docker: Ferramenta essencial para Desenvolvedores</h4>
-                <!-- <p>Prof. Fulano</p> -->
+                <p>Prof. Fulano</p>
             </div>
             <div class="curso-preco">
                 <span class="preco-de">R$80,00</span>
